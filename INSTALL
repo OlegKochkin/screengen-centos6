@@ -12,8 +12,8 @@ yum install -y ffmpeg-libs ffmpeg-devel
 
 yum install -y git
 cd /opt
-git clone https://github.com/OlegKochkin/screengen-docker
-cd /opt/screengen-docker
+git clone https://github.com/OlegKochkin/screengen-centos6
+cd /opt/screengen-centos6
 /usr/lib64/qt48/bin/qmake
 make
 make install

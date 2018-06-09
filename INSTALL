@@ -1,0 +1,21 @@
+INSTALL on CentOS 6
+
+Qt:
+yum install -y --nogpgcheck http://mirror.yandex.ru/fedora/russianfedora/russianfedora/free/el/releases/6/Everything/i386/os/puias-release-6-2.R.noarch.rpm
+yum install -y qt48-devel gcc-c++
+ln /usr/lib64/qt48/lib/libQtGui.so.4.8.4 /usr/lib64/libQtGui.so.4
+ln /usr/lib64/qt48/lib/libQtCore.so.4.8.4 /usr/lib64/libQtCore.so.4
+
+Ffmpeg:
+yum install -y --nogpgcheck  http://li.nux.ro/download/nux/dextop/el6/x86_64/nux-dextop-release-0-2.el6.nux.noarch.rpm
+yum install -y ffmpeg-libs ffmpeg-devel
+
+yum install -y git
+cd /opt
+git clone https://github.com/OlegKochkin/screengen-docker
+cd /opt/screengen-docker
+/usr/lib64/qt48/bin/qmake
+make
+make install
+
+For uninstall run 'make uninstall' in '/opt/screengen' directory

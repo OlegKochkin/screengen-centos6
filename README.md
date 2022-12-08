@@ -9,7 +9,7 @@ FFmpeg 2.6.8 (libavcodec 56) from nux
 
 Qt 4.8.4 from puias
 
-![Example](http://ipic.su/img/fs/BigBuckBunny.1528404865.jpg)
+![Example](.pics/example.jpg)
 
 ```
 Parameters:
